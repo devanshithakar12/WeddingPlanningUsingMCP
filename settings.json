@@ -1,0 +1,15 @@
+{
+  "mcp": {
+    // Removed inputs section; now using .env file for API key
+    "servers": {
+      "google-maps": {
+        "command": "docker",
+        "args": [
+          "run", "-i", "--rm",
+          "--env-file", "${workspaceFolder}/.env",
+          "mcp/google-maps"
+        ]
+      }
+    }
+  }
+}
